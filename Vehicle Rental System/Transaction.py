@@ -6,13 +6,16 @@ import datetime
 import Reservation
 
 
-class RESERVATION:
+class Reservation:
     def __init__(self, customer, vehicle, rental_duration, total_cost):
         self.customer = customer
         self.vehicle = vehicle
         self.rental_duration = rental_duration
         self.total_cost = total_cost
         self.reservation_date = datetime.datetime.now()
+
+    def get_summary(self):
+        return f"Reservation for {self.vehicle} by {self.customer} for {self.rental_duration} days. Total cost: {self.total_cost}."
 
 
 class Transaction(Reservation):
@@ -79,7 +82,7 @@ class Cash(Transaction):
 
 # Example:
 # Create a reservation
-reservation = RESERVATION(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
+reservation = Reservation(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
 
 # Create Epay transaction
 epay_transaction = Epay(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250, debit_credit="Credit", card_number="1234567890123456", expiration_date="12/25")
