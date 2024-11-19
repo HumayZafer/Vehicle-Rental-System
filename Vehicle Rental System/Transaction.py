@@ -1,11 +1,6 @@
 import random
 import datetime
 
-
-
-import Reservation
-
-
 class Reservation:
     def __init__(self, customer, vehicle, rental_duration, total_cost):
         self.customer = customer
@@ -60,7 +55,7 @@ class Invoice(Transaction):
         self.email_address = email_address
 
     def send_invoice(self):
-        invoice_details = f"Sending invoice to {self.email_adddress}:\n{self.get_transaction_summary()}"
+        invoice_details = f"Sending invoice to {self.email_address}:\n{self.get_transaction_summary()}"
         #sending email
         print(invoice_details)
         print(f"Invoice sent to {self.email_address}.")
@@ -82,21 +77,21 @@ class Cash(Transaction):
 
 # Example:
 # Create a reservation
-reservation = Reservation(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
+reservation = Reservation(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
 
 # Create Epay transaction
-epay_transaction = Epay(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250, debit_credit="Credit", card_number="1234567890123456", expiration_date="12/25")
+epay_transaction = Epay(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250, debit_credit="Credit", card_number="1234567890123456", expiration_date="12/25")
 print(epay_transaction.get_transaction_summary())
 epay_transaction.process_payment()
 print(epay_transaction.get_payment_details())
 
 # Create Invoice transaction
-invoice_transaction = Invoice(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250, email_address="johndoe@example.com")
+invoice_transaction = Invoice(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250, email_address="Ethan@example.com")
 invoice_transaction.send_invoice()
 print(invoice_transaction.get_invoice_summary())
 
 # Create Cash transaction
-cash_transaction = Cash(customer="John Doe", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
+cash_transaction = Cash(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
 print(cash_transaction.get_transaction_summary())
 cash_transaction.process_payment()
 print(cash_transaction.get_payment_details())
