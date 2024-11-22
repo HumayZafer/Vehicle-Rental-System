@@ -50,7 +50,7 @@ class reservation:
         print(f"Status: {reservation.status}")
 
 
-#Example
+'''#Example
 customer1 = Customer.sign_up("Ethan Carter", "Ethan@gmail.com", "password123")
 car1 = Car("C001", "Toyota", "Corolla", 2020, 50, "Sedan", 4)
 
@@ -58,4 +58,4 @@ car1 = Car("C001", "Toyota", "Corolla", 2020, 50, "Sedan", 4)
 reservation1 = reservation.make_reservation("R001", customer1, car1, datetime.now())
 reservation.display_reservation_details("R001")
 reservation.cancel_reservation("R001")
-reservation.display_reservation_details("R001")
+reservation.display_reservation_details("R001")'''

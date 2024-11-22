@@ -50,7 +50,7 @@ class Customermanager(Customer):
             return False
 
 
-# Example
+'''# Example
 if __name__ == "__main__":
     customer1 = Customer.sign_up("Ethan Carter", "Ethan@gmail.com", "password123", contact_number="12345678",
                                  driving_license="Dl1234356", cnic="cnic12314352")
@@ -79,4 +79,4 @@ if __name__ == "__main__":
         customer_manager.redeem_loyalty_points(100)
 
         # Get the new total discount after redeeming points
-        customer_manager.get_total_discount()
+        customer_manager.get_total_discount()'''

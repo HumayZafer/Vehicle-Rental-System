@@ -1,4 +1,8 @@
+
+
+
 class Customer:
+
 
     _customers = {}
 
@@ -63,19 +67,3 @@ class Customer:
             print("Invalid email or password")
             return None
 
-# example
-#sign-up
-customer1 = Customer.sign_up("Ethan Carter", "Ethan@gmail.com", "password123", contact_number= "12345678", driving_license="Dl1234356", cnic="cnic12314352")
-customer2 = Customer.sign_up("Abdullah", "Abdullah2@gmail.com", "password12345")
-
-#login
-logged_in_customer = Customer.login("Abdullah2@gmail.com", "password12345")
-
-if logged_in_customer:
-    logged_in_customer.add_rental_details("Car rental: Toyota  Corolla - 5 days")
-    logged_in_customer.display_rental_details()
-    logged_in_customer.set_contact_number("01234564536")
-    logged_in_customer.set_name("Abdullah")
-
-    print(f"Updated Name: {logged_in_customer.get_name()}")
-    print(f"Updated Contact Number: {logged_in_customer.get_contact_number()}")

@@ -69,7 +69,7 @@ class VehicleRentalSystem:
                     print(f"Vehicle {vehicle_id} is not available for rent."))
 
 
-# Example
+''''# Example
 if __name__ == "__main__":
     # Sign-up, Log in customer
     customer1 = Customer.sign_up("Ethan Carter", "Ethan@gmail.com", "password123", "12345678", "DL123456", "CNIC12314352")
@@ -89,4 +89,4 @@ if __name__ == "__main__":
 
     rental_system.display_available_vehicle()
     if logged_in_customer:
-        rental_system.rent_vehicle(logged_in_customer, "C001", 5)
+        rental_system.rent_vehicle(logged_in_customer, "C001", 5)'''

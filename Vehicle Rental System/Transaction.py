@@ -75,7 +75,7 @@ class Cash(Transaction):
     def process_payment(self):
         print(f"Processing cash payment of{self.total_cost}for{self.customer}")
 
-# Example:
+'''# Example:
 # Create a reservation
 reservation = Reservation(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
 
@@ -94,4 +94,4 @@ print(invoice_transaction.get_invoice_summary())
 cash_transaction = Cash(customer="Ethan Carter", vehicle="Toyota Corolla", rental_duration=5, total_cost=250)
 print(cash_transaction.get_transaction_summary())
 cash_transaction.process_payment()
-print(cash_transaction.get_payment_details())
+print(cash_transaction.get_payment_details())'''
